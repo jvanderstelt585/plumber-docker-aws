@@ -7,6 +7,21 @@ cors <- function(res) {
   plumber::forward()
 }
 
+#* @options /returnMyInput
+#* @get /returnMyInput
+#* @param inputValue:character 
+#* @response 200 Return successfull
+#* @response 500 Bad input
+#* @response default Return successfull
+function(inputValue) {
+  
+  # Extract the portfolio data
+  theOutput = paste0("Your input was: ", inputValue)
+  
+  return(theOutput)
+  
+}
+
 #* @options /sayHelloToWorld
 #* @post /sayHelloToWorld
 function(req) {
