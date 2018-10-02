@@ -27,20 +27,20 @@ For post method, run this<br/>
 curl -X POST http://localhost:9000/sayHelloToWorld<br/>
 
 # Step 6: Scale containers 
-ifconfig - get the ip (etho - inet addr) . 
-docker swarm init --advertise-addr 10.0.0.85 . 
-docker node ls . 
-docker service create --name=helloworld --with-registry-auth --replicas 1 --publish=8000:8000 jlv/hello:dev . 
-docker service scale helloworld=10 . 
-docker stats
+ifconfig - get the ip (etho - inet addr)<br/>
+docker swarm init --advertise-addr 10.0.0.85<br/>
+docker node ls<br/>
+docker service create --name=helloworld --with-registry-auth --replicas 1 --publish=8000:8000 jlv/hello:dev<br/> 
+docker service scale helloworld=10<br/>
+docker stats<br/>
 
 # Step 7 (Optional): Bring down existing containers and images
-docker kill <CONTAINER ID> . 
+docker kill <CONTAINER ID><br/>
 
-docker rmi jlv/hello:dev . 
--OR-  
-docker system prune -a . 
+docker rmi jlv/hello:dev<br/>
+-OR-<br/>
+docker system prune -a<br/>
 
 # Additional resources for docker 
-Python, but still good example . 
+Python, but still good example<br/>
 https://medium.com/@mtngt/docker-flask-a-simple-tutorial-bbcb2f4110b5
