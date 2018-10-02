@@ -1,4 +1,18 @@
+library(jsonlite)
 
+hostName <- system("hostname", intern = TRUE)
+
+#* @get /api/ping
+ping <- function()
+{
+ #environmentSettings <- Sys.getenv()
+ #hostName <- Sys.getenv("COMPUTERNAME")
+ #if (hostName == ""){
+ hostName <- system("hostname", intern = TRUE)
+ #}
+ echoText <- sprintf("[%s]: Welcome to Muni Horizon Pricing Model!", hostName)
+ return(echoText)
+}
 
 #* @filter cors
 cors <- function(res) {
