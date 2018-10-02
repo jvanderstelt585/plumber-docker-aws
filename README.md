@@ -2,7 +2,7 @@
 Deploying R api (with plumber) to AWS, with scaling
 
 # Prework: Setup server
-sudo yum install git . 
+sudo yum install git<br/>
 sudo yum install docker . 
 sudo service docker start
 
