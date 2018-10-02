@@ -38,4 +38,15 @@ docker rmi jlv/hello:dev
 docker system prune -a
 
 
+docker swarm init --advertise-addr 10.0.0.179
+docker node ls
+docker service create --name=helloworld --with-registry-auth --replicas 1 --publish=8000:8000 jlv/hello:dev
+
+docker service scale helloworld=10
+
+
+
+
+
+
 
