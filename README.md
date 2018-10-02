@@ -37,10 +37,12 @@ docker rmi jlv/hello:dev
 -OR-
 docker system prune -a
 
-
-docker swarm init --advertise-addr 10.0.0.179
+ifconfig - get the ip (etho - inet addr:
+docker swarm init --advertise-addr 10.0.0.85
 docker node ls
 docker service create --name=helloworld --with-registry-auth --replicas 1 --publish=8000:8000 jlv/hello:dev
+
+docker stats
 
 docker service scale helloworld=10
 
