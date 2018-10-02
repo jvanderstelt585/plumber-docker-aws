@@ -9,10 +9,10 @@ sudo service docker start<br/>
 # Step 1: Clone the repository
 git clone https://github.com/jvanderstelt585/plumber-docker-aws.git
 
-# Step 2: Move to repository folder . 
-ls [ENTER] - Ensure that the files were cloned<br/>
-cd plumber-docker-aws [ENTER] - Move into folder<br/>
-more filename [ENTER] - View scripts<br/>
+# Step 2: Move to repository folder
+ls (Ensure that the files were cloned)<br/>
+cd plumber-docker-aws (Move into folder)<br/>
+more filename (View scripts)<br/>
 
 # Step 3: Build the image
 docker build -f Dockerfile -t jlv/hello:dev . <br/>
