@@ -3,28 +3,28 @@ Deploying R api (with plumber) to AWS, with scaling
 
 # Prework: Setup server
 sudo yum install git<br/>
-sudo yum install docker . 
-sudo service docker start
+sudo yum install docker<br/>
+sudo service docker start<br/>
 
 # Step 1: Clone the repository
 git clone https://github.com/jvanderstelt585/plumber-docker-aws.git
 
 # Step 2: Move to repository folder . 
-ls [ENTER] - Ensure that the files were cloned . 
-cd plumber-docker-aws [ENTER] - Move into folder . 
-more filename [ENTER] - View scripts
+ls [ENTER] - Ensure that the files were cloned<br/>
+cd plumber-docker-aws [ENTER] - Move into folder<br/>
+more filename [ENTER] - View scripts<br/>
 
 # Step 3: Build the image
-docker build -f Dockerfile -t jlv/hello:dev . 
+docker build -f Dockerfile -t jlv/hello:dev . <br/>
 docker images
 
 # Step 4: Run the container
-docker run -d --name helloworld -p 9000:8000 jlv/hello:dev . 
-docker ps
+docker run -d --name helloworld -p 9000:8000 jlv/hello:dev<br/>
+docker ps<br/>
 
 # Step 5: Access the API 
-For post method, run this . 
-curl -X POST http://localhost:9000/sayHelloToWorld
+For post method, run this<br/>
+curl -X POST http://localhost:9000/sayHelloToWorld<br/>
 
 # Step 6: Scale containers 
 ifconfig - get the ip (etho - inet addr) . 
