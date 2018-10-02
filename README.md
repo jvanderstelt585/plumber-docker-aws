@@ -4,6 +4,11 @@ https://medium.com/@mtngt/docker-flask-a-simple-tutorial-bbcb2f4110b5
 # plumber-docker-aws
 Deploying R api (with plumber) to AWS
 
+# Setup server
+sudo yum install git
+sudo yum install docker
+sudo service docker start
+
 # Step 1: Clone the repository
 git clone https://github.com/jvanderstelt585/plumber-docker-aws.git
 
