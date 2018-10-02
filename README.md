@@ -1,4 +1,4 @@
-# plumber-docker-aws
+# Overview
 Deploying R api (with plumber) to AWS, with scaling
 
 # Prework: Setup server
@@ -24,7 +24,12 @@ docker ps<br/>
 
 # Step 5: Access the API 
 For post method, run this<br/>
+
+Within the command line of linux server:<br/>
 curl -X POST http://localhost:9000/sayHelloToWorld<br/>
+
+Remote ping to API (any computer or server):<br/>
+http://ec2-52-23-240-188.compute-1.amazonaws.com:9000/sayHelloToWorld<br/>
 
 # Step 6: Scale containers 
 ifconfig - get the ip (etho - inet addr)<br/>
